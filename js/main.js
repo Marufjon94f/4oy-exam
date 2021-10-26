@@ -71,9 +71,7 @@ let asusFunction = (id) => {
 //=================================   Matching text content from API  ============================================
     templatePost.querySelector(".template-post-title").textContent = obj.title;
     templatePost.querySelector(".template-post-body").textContent = obj.body;
-    templatePost
-      .querySelector(".post-btn")
-      .value = obj.id;
+    templatePost.querySelector(".post-btn").value = obj.id;
 
     elFragmentPost.appendChild(templatePost);
   };
