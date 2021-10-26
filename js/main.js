@@ -40,7 +40,7 @@ let userRender = (objects) => {
     objects.address.city;
   templateUser
     .querySelector(".user-btn")
-    .setAttribute("data-id", `${objects.id}`);
+    .value = objects.id;
 
   elFragment.appendChild(templateUser);
 };
@@ -73,7 +73,7 @@ let asusFunction = (id) => {
     templatePost.querySelector(".template-post-body").textContent = obj.body;
     templatePost
       .querySelector(".post-btn")
-      .setAttribute("data-id", `${obj.id}`);
+      .value = obj.id;
 
     elFragmentPost.appendChild(templatePost);
   };
@@ -94,10 +94,14 @@ let asusFunction = (id) => {
 };
 //=================================   Establishing info through click to window  =================================
 elUserList.addEventListener("click", (el) => {
-  elPostList.innerHTML = "";
+  
+  if(el.target.className == "user-btn btn btn-warning"){
+    elPostList.innerHTML = "";
   elCommentList.innerHTML = "";
-  let = userId = el.target.dataset.id;
+  const userId = el.target.value;
   asusFunction(userId);
+  }
+  
 
   
 });
@@ -142,7 +146,10 @@ let lenovo = (idCom) => {
 
 //=================================   Establishing info through click to window  =================================
 elPostList.addEventListener("click", (evt) => {
-  elCommentList.innerHTML = "";
-  let postId = evt.target.dataset.id;
+  if(evt.target.className == "post-btn btn btn-warning"){
+    elCommentList.innerHTML = "";
+  const postId = evt.target.value;
   lenovo(postId);
+  }
+  
 });
