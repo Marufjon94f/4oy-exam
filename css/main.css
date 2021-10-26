@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 .js-first-list, .js-second-list, .js-third-list{
-    height: 700px;
+    height: 720px;
     overflow: scroll;
     overflow-x: hidden;
     
@@ -30,7 +30,7 @@
   background-color: rgb(250, 250, 240);  
 }
 .js-second-list{
-    background-color: rgb(250, 250, 200);  
+    background-color: rgb(250, 245, 200);  
   }
   .js-third-list{
     background-color: rgb(250, 250, 180);  
@@ -39,4 +39,7 @@
   .img{
     margin-top: 15px;
     object-fit: contain;
+  }
+  .com-link{
+    text-decoration: none;
   }
