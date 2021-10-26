@@ -7,12 +7,20 @@
   list-style-type: none;
 }
 
+.template-user-item:hover{
+  transform: scale(1.1);
+  transition: 1s all;
+ }
 
+ .template-post-item:hover{
+  transform: scale(1.1);
+  transition: 1s all;
+ }
 .link{
     text-decoration: none;
 }
 .js-first-list, .js-second-list, .js-third-list{
-    height: 800px;
+    height: 700px;
     overflow: scroll;
     overflow-x: hidden;
     

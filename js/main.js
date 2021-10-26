@@ -4,6 +4,7 @@ let elUserList = $_(".js-first-list");
 let elPostList = $_(".js-second-list");
 let elCommentList = $_(".js-third-list");
 
+
 //=================================   Calling Template Elements  ============================================
 let elTemplateUserName = $_("#js-template-user").content;
 let elTemplatePost = $_("#js-template-post").content;
@@ -20,7 +21,7 @@ let elFragment = document.createDocumentFragment();
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => appendUserName(data));
-
+  
 //==============================================   Rendering  ====================================================
 let userRender = (objects) => {
   let templateUser = elTemplateUserName.cloneNode(true);
@@ -94,8 +95,11 @@ let asusFunction = (id) => {
 //=================================   Establishing info through click to window  =================================
 elUserList.addEventListener("click", (el) => {
   elPostList.innerHTML = "";
+  elCommentList.innerHTML = "";
   let = userId = el.target.dataset.id;
   asusFunction(userId);
+
+  
 });
 
 
