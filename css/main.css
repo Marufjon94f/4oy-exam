@@ -1,0 +1,34 @@
+
+.template-user-item{
+    list-style-type: none;
+    color: rgb(3, 3, 3);
+}
+.template-post-item{
+  list-style-type: none;
+}
+
+
+.link{
+    text-decoration: none;
+}
+.js-first-list, .js-second-list, .js-third-list{
+    height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+
+.js-first-list{
+  background-color: rgb(250, 250, 240);  
+}
+.js-second-list{
+    background-color: rgb(250, 250, 200);  
+  }
+  .js-third-list{
+    background-color: rgb(250, 250, 180);  
+  }
+  
+  .img{
+    margin-top: 15px;
+    object-fit: contain;
+  }
